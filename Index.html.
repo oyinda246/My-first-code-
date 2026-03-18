@@ -1,4 +1,83 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!DOCTYPE html>
+<html>
+<head>
+<title>Beautiful Life Facts</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    color: #333;
+    padding: 40px;
+}
+
+.container {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+h1 {
+    color: #ff4b5c;
+}
+
+#fact {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    background: #ff4b5c;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #ff6f61;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>🌸 Beautiful Facts About Life</h1>
+<p>By Oyin 💻✨</p>
+
+<div class="container">
+    <p id="fact">Click the button to discover something beautiful about life 💫</p>
+
+    <button onclick="showFact()">✨ Show Fact</button>
+</div>
+
+<script>
+function showFact() {
+    const facts = [
+        "You are unique—there’s no one else exactly like you 🌟",
+        "Small progress every day leads to big results 💪",
+        "Kindness always comes back in unexpected ways ❤️",
+        "Your thoughts shape your reality 🧠",
+        "Every day is a fresh start 🌅",
+        "You are stronger than you think 💥",
+        "Happiness can be found in simple things 😊",
+        "Growth takes time—be patient with yourself 🌱"
+    ];
+
+    let random = Math.floor(Math.random() * facts.length);
+    document.getElementById("fact").innerText = facts[random];
+}
+</script>
+
+</body>
+</html>
 <html>
 <head>
 <title>My First Code</title>
